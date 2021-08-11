@@ -1,15 +1,15 @@
 # Terrarium Project Part 3: DOM Manipulación y cierre
 
-! [DOM y un cierre](../images/webdev101-js.png)
+! [DOM y un cierre](/sketchnotes/webdev101-js.png)
 > Boceto de [Tomomi Imura](https://twitter.com/girlie_mac)
 
-## [Pre-lecture prueba](../.github/pre-lecture-quiz.md)
+## [Pre-lecture prueba](https://nice-beach-0fe9e9d0f.azurestaticapps.net/quiz/19)
 
 ### Introducción:
 
-Manipular el DOM, o el "Modelo de objetos de documento", es un aspecto clave del desarrollo web. Según [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), "El modelo de objetos de documento (DOM) es la representación de datos de los objetos que componen la estructura y contenido de un documento en la web ". Los desafíos en torno a la manipulación de DOM en la web a menudo han sido el ímpetu detrás del uso de marcos de JavaScript en lugar de JavaScript vanilla para administrar el DOM, ¡pero lo administraremos por nuestra cuenta!
+Manipular el DOM, o el "Modelo de objetos de documento", es un aspecto clave del desarrollo web. Según [MDN](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction), "El modelo de objetos de documento (DOM) es la representación de datos de los objetos que componen la estructura y contenido de un documento en la web ". Los desafíos en torno a la manipulación de DOM en la web a menudo han sido el ímpetu detrás del uso de marcos de JavaScript en lugar de JavaScript vanilla para administrar el DOM, ¡pero lo administraremos por nuestra cuenta!
 
-Además, esta lección presentará la idea de un [cierre de JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures), que puede considerar como una función encerrada por otra función para que la función interna tenga acceso al alcance de la función externa.
+Además, esta lección presentará la idea de un [cierre de JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Closures), que puede considerar como una función encerrada por otra función para que la función interna tenga acceso al alcance de la función externa.
 
 Usaremos un cierre para manipular el DOM.
 
@@ -108,9 +108,9 @@ function dragElement(terrariumElement) {
 
 `dragElement` obtiene su objeto` terrariumElement` de las declaraciones en la parte superior del script. Luego, establece algunas posiciones locales en "0" para el objeto pasado a la función. Estas son las variables locales que se manipularán para cada elemento a medida que agrega la funcionalidad de arrastrar y soltar dentro del cierre de cada elemento. El terrario estará poblado por estos elementos arrastrados, por lo que la aplicación debe realizar un seguimiento de dónde se colocan.
 
-Además, al terrariumElement que se pasa a esta función se le asigna un evento `pointerdown`, que forma parte de las [API web](https://developer.mozilla.org/en-US/docs/Web/API) diseñadas para ayudar con la gestión del DOM. `Onpointerdown` se dispara cuando se presiona un botón, o en nuestro caso, se toca un elemento que se puede arrastrar. Este controlador de eventos funciona tanto en [navegadores web como móviles](https://caniuse.com/?search=onpointerdown), con algunas excepciones.
+Además, al terrariumElement que se pasa a esta función se le asigna un evento `pointerdown`, que forma parte de las [API web](https://developer.mozilla.org/docs/Web/API) diseñadas para ayudar con la gestión del DOM. `Onpointerdown` se dispara cuando se presiona un botón, o en nuestro caso, se toca un elemento que se puede arrastrar. Este controlador de eventos funciona tanto en [navegadores web como móviles](https://caniuse.com/?search=onpointerdown), con algunas excepciones.
 
-✅ El [controlador de eventos `onclick`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick) tiene mucho más soporte entre navegadores; ¿Por qué no lo usarías aquí? Piense en el tipo exacto de interacción de pantalla que está intentando crear aquí.
+✅ El [controlador de eventos `onclick`](https://developer.mozilla.org/docs/Web/API/GlobalEventHandlers/onclick) tiene mucho más soporte entre navegadores; ¿Por qué no lo usarías aquí? Piense en el tipo exacto de interacción de pantalla que está intentando crear aquí.
 
 ---
 
@@ -197,11 +197,11 @@ Esta pequeña función restablece los eventos `onpointerup` y `onpointermove` pa
 
 🚀Challenge: agregue un nuevo controlador de eventos a su cierre para hacer algo más en las plantas; por ejemplo, haga doble clic en una planta para traerla al frente. ¡Se creativo!
 
-## [Post-lecture prueba](.github/post-lecture-quiz.md)
+## [Post-lecture prueba](https://nice-beach-0fe9e9d0f.azurestaticapps.net/quiz/20)
 
 ## Revisión y autoestudio
 
-Si bien arrastrar elementos por la pantalla parece trivial, hay muchas formas de hacerlo y muchas trampas, según el efecto que busque. De hecho, hay una [API de arrastrar y soltar](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API) completa que puedes probar. No lo usamos en este módulo porque el efecto que queríamos era algo diferente, pero pruebe esta API en su propio proyecto y vea lo que puede lograr.
+Si bien arrastrar elementos por la pantalla parece trivial, hay muchas formas de hacerlo y muchas trampas, según el efecto que busque. De hecho, hay una [API de arrastrar y soltar](https://developer.mozilla.org/docs/Web/API/HTML_Drag_and_Drop_API) completa que puedes probar. No lo usamos en este módulo porque el efecto que queríamos era algo diferente, pero pruebe esta API en su propio proyecto y vea lo que puede lograr.
 
 ** Tarea: [Trabajar un poco más con el DOM](assignment.es.md)
 

@@ -1,6 +1,6 @@
 # ブラウザ拡張機能プロジェクト その 1: ブラウザのすべて
 
-![Browser sketchnote](../images/sketchnote.jpg)
+![Browser sketchnote](/sketchnotes/browser.jpg)
 > Sketchnote by [Wassim Chegham](https://dev.to/wassimchegham/ever-wondered-what-happens-when-you-type-in-a-url-in-an-address-bar-in-a-browser-3dob)
 
 ## レッスン前の小テスト
@@ -68,7 +68,7 @@
 - [スターターコード](../../start)。`start`フォルダをダウンロードしてください。このフォルダでコードを完成させることになります。
 - [NPM](https://www.npmjs.com) - NPM はパッケージ管理ツールです。ローカルにインストールすると、`package.json` ファイルに記載されているパッケージがインストールされ、Web アセットで使用されます。
 
-✅ この[優れた Learn モジュール](https://docs.microsoft.com/ja-jp/learn/modules/create-nodejs-project-dependencies/)では、パッケージ管理の詳細を学ぶことができます。
+✅ この[優れた Learn モジュール](https://docs.microsoft.com/ja-jp/learn/modules/create-nodejs-project-dependencies/?WT.mc_id=academic-13441-cxa)では、パッケージ管理の詳細を学ぶことができます。
 
 コードベースに目を通してみてください。
 
@@ -155,7 +155,7 @@ npm install
 
 このレッスンでは、Web ブラウザの歴史について少し学びました。この機会に、Web ブラウザの歴史を読むことで、World Wide Web の発明者がどのように Web ブラウザの使用を想定しているかを学びましょう。役に立つサイトをいくつか紹介します。
 
-[Web ブラウザの歴史](https://www.mozilla.org/en-US/firefox/browsers/browser-history/)
+[Web ブラウザの歴史](https://www.mozilla.org/firefox/browsers/browser-history/)
 
 [Web の歴史](https://webfoundation.org/about/vision/history-of-the-web/)
 

@@ -29,7 +29,7 @@
 
 विचार एक क्लास के लिए एक निश्चित व्यवहार को जोड़ने के लिए `inheritence` के साथ संयोजन में `inheritence` का उपयोग करने के लिए है.
 
-✅ समझने के लिए इन्हेरिटेंस एक महत्वपूर्ण अवधारणा है। [एमडीएन के इन्हेरिटेंस के बारे में लेख](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototyp_chain) पर और जानें.
+✅ समझने के लिए इन्हेरिटेंस एक महत्वपूर्ण अवधारणा है। [एमडीएन के इन्हेरिटेंस के बारे में लेख](https://developer.mozilla.org/docs/Web/JavaScript/Inheritance_and_the_prototyp_chain) पर और जानें.
 
 कोड के माध्यम से व्यक्त, एक गेम ऑब्जेक्ट आमतौर पर इस तरह दिख सकता है:
 
@@ -211,11 +211,11 @@ eventEmitter.on(Messages.HERO_MOVE_LEFT, () => {
 
 ## लेक्चर बाद की क्विज
 
-[लेक्चर बाद की क्विज](https://nice-beach-0fe9e9d0f.azurestaticapps.net/quiz/30?loc=30)
+[लेक्चर बाद की क्विज](https://nice-beach-0fe9e9d0f.azurestaticapps.net/quiz/30?loc=hi)
 
 ## समीक्षा और स्व अध्ययन
 
-pub/sub[के बारे में पढ़े](https://docs.microsoft.com/en-us/azure/altecture/patterns/publisher-subscriber) और अधिक जानें .
+pub/sub[के बारे में पढ़े](https://docs.microsoft.com/azure/altecture/patterns/publisher-subscriber?WT.mc_id=academic-13441-cxa) और अधिक जानें .
 
 ## असाइनमेंट
 

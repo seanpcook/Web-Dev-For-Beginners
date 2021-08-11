@@ -174,7 +174,7 @@ const routes = {
 };
 ```
 
-では、`updateRoute` 関数を少し修正してみましょう。引数に `templateId` を直接渡すのではなく、まず現在の URL を見て、map を使って対応するテンプレート ID の値を取得したいと思います。URL からパス部分だけを取得するには、[`window.location.pathname`](https://developer.mozilla.org/en-US/docs/Web/API/Location/pathname)を使うことができます。
+では、`updateRoute` 関数を少し修正してみましょう。引数に `templateId` を直接渡すのではなく、まず現在の URL を見て、map を使って対応するテンプレート ID の値を取得したいと思います。URL からパス部分だけを取得するには、[`window.location.pathname`](https://developer.mozilla.org/docs/Web/API/Location/pathname)を使うことができます。
 
 ```js
 function updateRoute() {
@@ -202,7 +202,7 @@ function updateRoute() {
 
 2番目の部分はすでに `updateRoute` 関数で処理したので、現在の URL を更新する方法を見つけなければなりません。
 
-JavaScript、特に [history.pushState`](https://developer.mozilla.org/ja/docs/Web/API/History/pushState) を使う必要があります。これは HTML をリロードせずに URL を更新して閲覧履歴に新しいエントリを作成することができます。
+JavaScript、特に [`history.pushState`](https://developer.mozilla.org/ja/docs/Web/API/History/pushState) を使う必要があります。これは HTML をリロードせずに URL を更新して閲覧履歴に新しいエントリを作成することができます。
 
 > 注: HTML アンカー要素[`<a href>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a)は単独で使用して異なる URL へのハイパーリンクを作成することができますが、ブラウザはデフォルトで HTML をリロードさせることになります。カスタム javascript でルーティングを扱う際には、クリックイベントの preventDefault() 関数を使用して、この動作を防ぐ必要があります。
 
@@ -212,7 +212,7 @@ JavaScript、特に [history.pushState`](https://developer.mozilla.org/ja/docs/W
 
 ```js
 function navigate(path) {
-  window.history.pushState({}, path, window.location.origin + path);
+  window.history.pushState({}, path, path);
   updateRoute();
 }
 ```
@@ -247,9 +247,9 @@ function onLinkClick(event) {
 HTML の *Login* と *Logout* リンクにバインディングを追加してナビゲーションシステムを完成させましょう。
 
 ```html
-<a href="/dashboard" onclick="onLinkClick()">Login</a>
+<a href="/dashboard" onclick="onLinkClick(event)">Login</a>
 ...
-<a href="/login" onclick="onLinkClick()">Logout</a>
+<a href="/login" onclick="onLinkClick(event)">Logout</a>
 ```
 
 [`onclick`](https://developer.mozilla.org/ja/docs/Web/API/GlobalEventHandlers/onclick) 属性を使用して、`click` イベントを JavaScript コードにバインドし、ここでは `navigate()` 関数の呼び出しを行います。
@@ -266,7 +266,7 @@ HTML の *Login* と *Logout* リンクにバインディングを追加して�
 
 何度か戻るボタンをクリックしてみると、現在の URL が変わって履歴が更新されていますが、同じテンプレートが表示され続けています。
 
-これは、履歴が変わるたびに `updateRoute()` を呼び出す必要があることを知らないからです。[`history.pushState` のドキュメント](https://developer.mozilla.org/ja/docs/Web/API/History/pushState)を見てみると、状態が変化した場合、つまり別の URL に移動した場合には、[`popstate`](https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event)イベントが発生することがわかります。これを使ってこの問題を解決しましょう。
+これは、履歴が変わるたびに `updateRoute()` を呼び出す必要があることを知らないからです。[`history.pushState` のドキュメント](https://developer.mozilla.org/ja/docs/Web/API/History/pushState)を見てみると、状態が変化した場合、つまり別の URL に移動した場合には、[`popstate`](https://developer.mozilla.org/docs/Web/API/Window/popstate_event)イベントが発生することがわかります。これを使ってこの問題を解決しましょう。
 
 ### タスク
 
@@ -297,7 +297,7 @@ updateRoute();
 
 ## 復習と自己学習
 
-ルーティングは Web 開発の驚くほどトリッキーな部分の1つで、特に Web がページ更新の動作からシングルページアプリケーションのページ更新へと移行するにつれ、そのような部分が増えてきています。[Azure Static Web Apps プレビューでのルート](https://docs.microsoft.com/ja-jp/azure/static-web-apps/routes)がルーティングを扱うことについて少し読んでみてください。そのドキュメントに記載されているいくつかの決定が必要な理由を説明できますか？
+ルーティングは Web 開発の驚くほどトリッキーな部分の1つで、特に Web がページ更新の動作からシングルページアプリケーションのページ更新へと移行するにつれ、そのような部分が増えてきています。[Azure Static Web Apps プレビューでのルート](https://docs.microsoft.com/ja-jp/azure/static-web-apps/routes?WT.mc_id=academic-13441-cxa)がルーティングを扱うことについて少し読んでみてください。そのドキュメントに記載されているいくつかの決定が必要な理由を説明できますか？
 
 ## 課題
 

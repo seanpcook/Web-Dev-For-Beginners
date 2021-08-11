@@ -1,11 +1,11 @@
 # Terrarium 프로젝트 파트 1: HTML 소개
 
-![Introduction to HTML](../images/webdev101-html.png)
+![Introduction to HTML](/sketchnotes/webdev101-html.png)
 > Sketchnote by [Tomomi Imura](https://twitter.com/girlie_mac)
 
 ## 강의 전 퀴즈
 
-[Pre-lecture quiz](../.github/pre-lecture-quiz.md)
+[Pre-lecture quiz](https://nice-beach-0fe9e9d0f.azurestaticapps.net/quiz/15?loc=ko)
 
 ### 소개
 
@@ -48,13 +48,13 @@ HTML 파일의 첫 번째 줄은 doctype입니다. 파일 최상단에 줄이 �
 <html></html>
 ```
 
-✅ 쿼리 문자열로 DocType을 설정하여 결정할 수 있는 몇 가지 모드가 있습니다: [Quirks Mode and Standards Mode](https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode). 이 모드는 요즘 잘 사용하지 않는 오래된 브라우저를 지원하는 데 사용되었습니다 (Netscape Navigator 4 및 Internet Explorer 5). 표준 doctype 선언을 할 수도 있습니다.
+✅ 쿼리 문자열로 DocType을 설정하여 결정할 수 있는 몇 가지 모드가 있습니다: [Quirks Mode and Standards Mode](https://developer.mozilla.org/docs/Web/HTML/Quirks_Mode_and_Standards_Mode). 이 모드는 요즘 잘 사용하지 않는 오래된 브라우저를 지원하는 데 사용되었습니다 (Netscape Navigator 4 및 Internet Explorer 5). 표준 doctype 선언을 할 수도 있습니다.
 
 ---
 
 ## 문서의 'head'
 
-HTML 문서의 'head' 영역에는 [metadata](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)라고 하는 웹 페이지의 중요한 정보가 포함되어 있습니다. 우리의 경우에는, 이 페이지가 렌더링될 웹 서버에 다음 4가지를 알립니다.
+HTML 문서의 'head' 영역에는 [metadata](https://developer.mozilla.org/docs/Web/HTML/Element/meta)라고 하는 웹 페이지의 중요한 정보가 포함되어 있습니다. 우리의 경우에는, 이 페이지가 렌더링될 웹 서버에 다음 4가지를 알립니다.
 
 -   페이지의 제목
 -   페이지 메타데이터 포함:
@@ -75,7 +75,7 @@ HTML 문서의 'head' 영역에는 [metadata](https://developer.mozilla.org/en-U
 </head>
 ```
 
-✅ `<meta name="viewport" content="width=600">`과 같이 viewport 메타 태그를 설정하면 어떻게 되나요? [viewport](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag)에 대해 자세히 알아보세요.
+✅ `<meta name="viewport" content="width=600">`과 같이 viewport 메타 태그를 설정하면 어떻게 되나요? [viewport](https://developer.mozilla.org/docs/Mozilla/Mobile/Viewport_meta_tag)에 대해 자세히 알아보세요.
 
 ---
 
@@ -213,17 +213,17 @@ HTML에서는, .html 파일에 태그를 추가하여 웹 페이지의 요소를
 
 ## 🚀 도전
 
-HTML에는 여전히 재미있고 '오래된' 태그가 있지만, 마크업에서는 [이러한 태그](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)처럼 더 이상 사용되지 않는 태그를 쓰면 안됩니다. 그래도, 예전 `<marquee>` 태그를 사용하여 h1 제목을 가로로 스크롤할 수 있습니까? (한다면, 나중에 제거하는 것을 잊지 마십시오)
+HTML에는 여전히 재미있고 '오래된' 태그가 있지만, 마크업에서는 [이러한 태그](https://developer.mozilla.org/docs/Web/HTML/Element)처럼 더 이상 사용되지 않는 태그를 쓰면 안됩니다. 그래도, 예전 `<marquee>` 태그를 사용하여 h1 제목을 가로로 스크롤할 수 있습니까? (한다면, 나중에 제거하는 것을 잊지 마십시오)
 
 ## 강의 후 퀴즈
 
-[Post-lecture quiz](../.github/post-lecture-quiz.md)
+[Post-lecture quiz](https://nice-beach-0fe9e9d0f.azurestaticapps.net/quiz/16?loc=ko)
 
 ## 리뷰 & 자기주도 학습
 
 HTML은 웹을 오늘 날의 웹으로 구축하는 데 도움이 준 'tried and true' 빌딩 블록 시스템입니다. 오래된 태그와 새로운 태그를 연구하여 그 역사에 대해 조금 배우십시오. 일부는 더 이상 안 쓰고 일부는 새로 만들어진 이유를 알 수 있습니까? 앞으로 어떤 태그가 도입될까요?
 
-[Microsoft Learn](https://docs.microsoft.com/learn/modules/build-simple-website/?WT.mc_id=cxaall-4621-cxall)에서 웹과 모바일용 사이트 제작에 대해 자세히 알아보세요.
+[Microsoft Learn](https://docs.microsoft.com/learn/modules/build-simple-website/?WT.mc_id=academic-13441-cxa)에서 웹과 모바일용 사이트 제작에 대해 자세히 알아보세요.
 
 
 ## 과제

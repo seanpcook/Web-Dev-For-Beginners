@@ -1,9 +1,9 @@
 # Terrarium Project Parte 2: Introducción a CSS
 
-![Introducción a CSS](../images/webdev101-css.png)
+![Introducción a CSS](/sketchnotes/webdev101-css.png)
 > Sketchnote por [Tomomi Imura](https://twitter.com/girlie_mac)
 
-## [Pre-lecture prueba](../.github/pre-lecture-quiz.md)
+## [Pre-lecture prueba](https://nice-beach-0fe9e9d0f.azurestaticapps.net/quiz/17)
 
 ### Introducción:
 
@@ -192,7 +192,7 @@ Primero, diseñe los elementos secundarios `.terrarium` div como un rectángulo 
 	height: 80%;
 	width: 60%;
 	background: #d1e1df;
-	border-radius: 10%;
+	border-radius: 1rem;
 	position: absolute;
 	bottom: 0.5%;
 	left: 20%;
@@ -222,19 +222,19 @@ Primero, diseñe los elementos secundarios `.terrarium` div como un rectángulo 
 }
 
 .dirt {
-	width: 58%;
+	width: 60%;
 	height: 5%;
 	background: #3a241d;
 	position: absolute;
-	border-radius: 0 0 4rem 4rem;
+	border-radius: 0 0 1rem 1rem;
 	bottom: 1%;
-	left: 21%;
+	left: 20%;
 	opacity: 0.7;
 	z-index: -1;
 }
 ```
 
-Tenga en cuenta el uso de porcentajes aquí, incluso para el `border-radius`. Si reduce la escala de su navegador, también puede ver cómo se escalan las esquinas del frasco. Observe también los porcentajes de ancho y alto de los elementos del tarro y cómo cada elemento está absolutamente posicionado en el centro, fijado a la parte inferior de la ventana gráfica.
+Tenga en cuenta el uso de porcentajes aquí. Si reduce la escala de su navegador, también puede ver cómo se escalan las esquinas del frasco. Observe también los porcentajes de ancho y alto de los elementos del tarro y cómo cada elemento está absolutamente posicionado en el centro, fijado a la parte inferior de la ventana gráfica.
 
 ✅ Intente cambiar los colores y la opacidad del frasco frente a los de la suciedad. ¿Lo que pasa? ¿Por qué?
 
@@ -244,7 +244,7 @@ Tenga en cuenta el uso de porcentajes aquí, incluso para el `border-radius`. Si
 
 ![terrario terminado](../images/terrarium-final.png)
 
-## [Post-lecture prueba](../.github/post-lecture-quiz.md)
+## [Post-lecture prueba](https://nice-beach-0fe9e9d0f.azurestaticapps.net/quiz/18)
 
 ## Revisión y autoestudio
 
@@ -252,6 +252,4 @@ CSS parece engañosamente sencillo, pero existen muchos desafíos cuando se trat
 
 **Asignación**: [Refactorización CSS](assignment.es.md)
 
-Complete los siguientes módulos de aprendizaje para completar el [cuestionario posterior a la conferencia](../.github/post-lecture-quiz.md):
-
-[Diseñe su aplicación HTML con CSS](https://docs.microsoft.com/en-us/learn/modules/build-simple-website/4-css-basics)
+[Diseñe su aplicación HTML con CSS](https://docs.microsoft.com/learn/modules/build-simple-website/4-css-basics?WT.mc_id=academic-13441-cxa)

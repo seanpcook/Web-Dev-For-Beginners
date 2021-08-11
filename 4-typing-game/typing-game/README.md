@@ -14,16 +14,16 @@ The way we mark a section of code we want to execute is by creating a function. 
 
 To handle events (button clicking, typing, etc.), we register **event listeners**. An event listener is a function which listens for an event to occur and executes in response. Event listeners can update the UI, make calls to the server, or whatever else needs to be done in response to the user's action. We add an event listener by using [addEventListener](https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener), and providing a function to execute.
 
-> **NOTE:** It's worth highlighting there are numerous ways to create event listeners. You can use anonymous functions, or create named ones. You can use various shortcuts, like setting the `click` property, or using `addEventListener`. In our exercise we are going to focus on `addEventLister` and anonymous functions, as it's probably the most common technique web developers use. It's also the most flexible, as `addEventListener` works for all events, and the event name can be provided as a parameter.
+> **NOTE:** It's worth highlighting there are numerous ways to create event listeners. You can use anonymous functions, or create named ones. You can use various shortcuts, like setting the `click` property, or using `addEventListener`. In our exercise we are going to focus on `addEventListener` and anonymous functions, as it's probably the most common technique web developers use. It's also the most flexible, as `addEventListener` works for all events, and the event name can be provided as a parameter.
 
 ### Common events
 
 There are [dozens of events](https://developer.mozilla.org/docs/Web/Events) available for you to listen to when creating an application. Basically anything a user does on a page raises an event, which gives you a lot of power to ensure they get the experience you desire. Fortunately, you'll normally only need a small handful of events. Here's a few common ones (including the two we'll use when creating our game):
 
-- [click](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event): The user clicked on something, typically a button or hyperlink
-- [contextmenu](https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event): The user clicked the right mouse button
-- [select](https://developer.mozilla.org/en-US/docs/Web/API/Element/select_event): The user highlighted some text
-- [input](https://developer.mozilla.org/en-US/docs/Web/API/Element/input_event): The user input some text
+- [click](https://developer.mozilla.org/docs/Web/API/Element/click_event): The user clicked on something, typically a button or hyperlink
+- [contextmenu](https://developer.mozilla.org/docs/Web/API/Element/contextmenu_event): The user clicked the right mouse button
+- [select](https://developer.mozilla.org/docs/Web/API/Element/select_event): The user highlighted some text
+- [input](https://developer.mozilla.org/docs/Web/API/Element/input_event): The user input some text
 
 ## Creating the game
 
@@ -332,7 +332,7 @@ Add more functionality
 
 ## Review & Self Study
 
-Read up on [all the events available](https://developer.mozilla.org/en-US/docs/Web/Events) to the developer via the web browser, and consider the scenarios in which you would use each one.
+Read up on [all the events available](https://developer.mozilla.org/docs/Web/Events) to the developer via the web browser, and consider the scenarios in which you would use each one.
 
 ## Assignment
 

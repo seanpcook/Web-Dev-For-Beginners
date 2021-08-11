@@ -1,10 +1,10 @@
 # JavaScript 기초: 메소드와 함수
 
-![JavaScript Basics - Functions](../images/webdev101-js-functions.png)
+![JavaScript Basics - Functions](/sketchnotes/webdev101-js-functions.png)
 > Sketchnote by [Tomomi Imura](https://twitter.com/girlie_mac)
 
 ## 강의 전 퀴즈
-[Pre-lecture quiz](../.github/pre-lecture-quiz.md)
+[Pre-lecture quiz](https://nice-beach-0fe9e9d0f.azurestaticapps.net/quiz/9?loc=ko)
 
 코드 작성에 대해 생각할 때 항상 코드를 읽을 수 있도록 해야합니다. 직설적이지 않지만, 코드는 작성된 것보다 더 많이 읽힙니다. 개발자의 툴 박스에서 유지관리 가능한 코드를 보장하는 핵심 도구는 **함수**입니다.
 
@@ -101,7 +101,7 @@ displayGreeting('Christopher', 'Hi');
 
 ## 반환 값
 
-지금까지 만든 함수는 항상 [console](https://developer.mozilla.org/en-US/docs/Web/API/console)에 출력됩니다. 특히 다른 서비스를 호출할 함수를 만들 때도 이것이 찾고 있을 수 있습니다. 하지만 계산을 하고 값을 다른 곳에 다시 제공하고자 헬퍼 함수를 만들고 싶으면 어떻게 해야합니까?
+지금까지 만든 함수는 항상 [console](https://developer.mozilla.org/docs/Web/API/console)에 출력됩니다. 특히 다른 서비스를 호출할 함수를 만들 때도 이것이 찾고 있을 수 있습니다. 하지만 계산을 하고 값을 다른 곳에 다시 제공하고자 헬퍼 함수를 만들고 싶으면 어떻게 해야합니까?
 
 **반환 값**을 사용하면 할 수 있습니다. 반환 값은 함수에 의해 반환되며, 문자열이나 숫자와 같은 리터럴 값을 저장할 수 있고 똑같은 변수에 저장할 수 있습니다.
 
@@ -130,7 +130,7 @@ const greetingMessage = createGreetingMessage('Christopher');
 
 프로그래밍 경력을 쌓으면서, 함수를 매개 변수로 받는 함수를 보게 될 것 입니다. 이 깔끔한 트릭은 일반적으로 어떤 일이 발생되거나 완료되는 때를 알지 못하지만, 이에 반응하여 작업해야 한다는 것을 알고있을 때 사용됩니다.
 
-예시로, 타이머를 시작하고 완료되면 코드를 실행하는 [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)을 고려해보세요. 실행하려는 코드를 먼저 알려줘야 합니다. 함수에 대한 완벽한 직업인 것 같습니다!
+예시로, 타이머를 시작하고 완료되면 코드를 실행하는 [setTimeout](https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)을 고려해보세요. 실행하려는 코드를 먼저 알려줘야 합니다. 함수에 대한 완벽한 직업인 것 같습니다!
 
 아래 코드를 실행하면, 3초 후에 **3 seconds has elapsed**는 메시지가 표시됩니다.
 
@@ -181,11 +181,11 @@ setTimeout(3000, () => {
 함수와 메소드의 차이점을 한 문장으로 표현할 수 있나요? 시도해보세요!
 
 ## 강의 후 퀴즈
-[Post-lecture quiz](../.github/post-lecture-quiz.md)
+[Post-lecture quiz](https://nice-beach-0fe9e9d0f.azurestaticapps.net/quiz/10?loc=ko)
 
 ## 리뷰 & 자기주도 학습
 
-화살표 함수는 코드 베이스에서 점점 많이 사용되고 있으므로, [읽어 볼 가치](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)가 있습니다. 함수 작성을 연습한 다음에 syntax로 다시 작성하십시오.
+화살표 함수는 코드 베이스에서 점점 많이 사용되고 있으므로, [읽어 볼 가치](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/Arrow_functions)가 있습니다. 함수 작성을 연습한 다음에 syntax로 다시 작성하십시오.
 
 ## 과제
 

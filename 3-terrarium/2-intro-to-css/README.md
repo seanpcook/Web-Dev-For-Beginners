@@ -1,6 +1,6 @@
 # Terrarium Project Part 2: Introduction to CSS
 
-![Introduction to CSS](images/webdev101-css.png)
+![Introduction to CSS](/sketchnotes/webdev101-css.png)
 > Sketchnote by [Tomomi Imura](https://twitter.com/girlie_mac)
 
 ## Pre-Lecture Quiz
@@ -15,7 +15,7 @@ CSS, or Cascading Style Sheets, solve an important problem of web development: h
 
 In this lesson, we're going to add styles to our online terrarium and learn more about several CSS concepts: the cascade, inheritance, and the use of selectors, positioning, and using CSS to build layouts. In the process we will layout the terrarium and create the actual terrarium itself.
 
-### Prequisite
+### Prerequisite
 
 You should have the HTML for your terrarium built and ready to be styled.
 
@@ -61,7 +61,7 @@ Styles are inherited from an ancestor style to a descendent, such that nested el
 
 Set the body's font to a given font, and check to see a nested element's font:
 
-```
+```CSS
 body {
 	font-family: helvetica, arial, sans-serif;
 }
@@ -81,7 +81,7 @@ Open your browser's console to the 'Elements' tab and observe the H1's font. It 
 
 So far, your `style.css` file has only a few tags styled, and the app looks pretty strange:
 
-```
+```CSS
 body {
 	font-family: helvetica, arial, sans-serif;
 }
@@ -98,7 +98,7 @@ This way of styling a tag gives you control over unique elements, but you need t
 
 Add some style to layout the left and right containers. Since there is only one left container and only one right container, they are given ids in the markup. To style them, use `#`:
 
-```
+```CSS
 #left-container {
 	background-color: #eee;
 	width: 15%;
@@ -142,7 +142,7 @@ Notice that each plant in the HTML markup has a combination of ids and classes. 
 
 Add the following to your `style.css` file:
 
-```css
+```CSS
 .plant-holder {
 	position: relative;
 	height: 13%;
@@ -189,12 +189,12 @@ Now you will use what you learned to build the terrarium itself, all using CSS!
 
 First, style the `.terrarium` div children as a rounded rectangle using CSS:
 
-```css
+```CSS
 .jar-walls {
 	height: 80%;
 	width: 60%;
 	background: #d1e1df;
-	border-radius: 10%;
+	border-radius: 1rem;
 	position: absolute;
 	bottom: 0.5%;
 	left: 20%;
@@ -224,19 +224,21 @@ First, style the `.terrarium` div children as a rounded rectangle using CSS:
 }
 
 .dirt {
-	width: 58%;
+	width: 60%;
 	height: 5%;
 	background: #3a241d;
 	position: absolute;
-	border-radius: 0 0 4rem 4rem;
+	border-radius: 0 0 1rem 1rem;
 	bottom: 1%;
-	left: 21%;
+	left: 20%;
 	opacity: 0.7;
 	z-index: -1;
 }
 ```
 
-Note the use of percentages here, even for the `border-radius`. If you scale your browser down, you can see how the jar corners scale as well. Also notice the widths and height percentages for the jar elements and how each element is absolutely positioned in the center, pinned to the bottom of the viewport.
+Note the use of percentages here. If you scale your browser down, you can see how the jar scales as well. Also notice the widths and height percentages for the jar elements and how each element is absolutely positioned in the center, pinned to the bottom of the viewport.
+
+We are also using `rem` for the border-radius, a font-relative length. Read more about this type of relative measurement in the [CSS spec](https://www.w3.org/TR/css-values-3/#font-relative-lengths).
 
 ✅ Try changing the jar colors and opacity vs. those of the dirt. What happens? Why?
 
@@ -248,7 +250,7 @@ Add a 'bubble' shine to the left bottom area of the jar to make it look more gla
 
 ![finished terrarium](./images/terrarium-final.png)
 
-To complete the post-lecture quiz, go through this Learn module: [Style your HTML app with CSS](https://docs.microsoft.com/en-us/learn/modules/build-simple-website/4-css-basics)
+To complete the post-lecture quiz, go through this Learn module: [Style your HTML app with CSS](https://docs.microsoft.com/learn/modules/build-simple-website/4-css-basics?WT.mc_id=academic-13441-cxa)
 
 ## Post-Lecture Quiz
 
